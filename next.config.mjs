@@ -2,6 +2,16 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/**", // بتسمح بأي مسار صور داخل الموقع ده
+      },
+    ],
+  },
 };
 
 export default nextConfig;
+
