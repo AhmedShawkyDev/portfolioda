@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import HeroSection from "@/components/hero-section/hero-section";
 import ProjectSection from "@/components/project-section/project-section";
 import AboutMeSection from "@/components/about-section/about-me-section";
+import SkillsSection from "@/components/skills-section/skills-section";
 import ContactsSection from "@/components/contacts-section/contacts-section";
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <ProjectSection />
       <AboutMeSection />
+      <SkillsSection />
       <ContactsSection />
     </Container>
   );

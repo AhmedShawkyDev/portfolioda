@@ -7,27 +7,31 @@ import MotionComp from "@/components/motion-component";
 
 export default function HeroSection() {
   return (
-    <Container className="lg:flex-row gap-5 justify-between w-full h-fit xl:h-screen  mt-10! lg:mt-0!">
+    <Container className="lg:flex-row gap-5 justify-between w-full h-fit xl:h-screen  mt-10! lg:mt-[-10]!">
       <div className="flex flex-col gap-6 lg:w-2/3 w-full">
         <MotionComp className="flex flex-col gap-6">
           <div className="text-2xl xl:text-4xl text-foreground  flex flex-wrap gap-4 font-semibold flex-col">
             <div className="flex gap-2">
-              <span className="">Name"</span>
-              <span className="text-primary"> Ahmed" </span>
+              <span className="">My Name is</span>
+              <span className="text-primary"> Ahmed Shawky </span>
             </div>
-            and"
-            <span className="text-primary"> developer" </span>
+            and I am
+            <span className="text-primary"> Data Analyst </span>
           </div>
           <p className="text-xl text-primary-text font-medium lg:w-3/4 w-full">
-            description"
+            Behind every complex dataset is a story waiting to be told. I
+            transform messy data into clean, visual stories that uncover hidden
+            opportunities because Data Analysis is bridging the gap between
+            numbers and strategy through advanced analytics and dynamic
+            dashboards.
           </p>
           <div className="flex gap-4">
-            <Link
-              href={`/`}
+            {/* <Link
+              href={`/#contacts`}
               className="border px-4 py-2 border-primary w-fit hover:bg-primary text-foreground"
             >
-              contact"
-            </Link>
+              Contact Me
+            </Link> */}
             <a
               className="border px-4 py-2 border-primary w-fit hover:bg-primary flex items-center gap-2 text-foreground"
               target="_blank"
@@ -35,7 +39,7 @@ export default function HeroSection() {
               download={true}
               href="https://drive.google.com/file/d/1lO2aGujfsXZEux5kmkZpzh7Xc4hCD5Sj/view?usp=sharing"
             >
-              download" <FaCloudDownloadAlt />
+              Download Resume <FaCloudDownloadAlt />
             </a>
           </div>
         </MotionComp>

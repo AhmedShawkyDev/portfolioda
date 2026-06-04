@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function ContactsSection() {
   return (
     <Container
-      id="contacts"
+      id="contactsection"
       className="w-full h-fit xl:h-[50vh] gap-14 mb-20 xl:mb-0 lg:mt-0"
     >
       <SectionTitle title="contacts" />

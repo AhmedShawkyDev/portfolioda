@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl";
 import SkillsCard from "../skills-card";
-
+import SectionTitle from "../section-title";
+import Container from "../container";
 export default function SkillsSection() {
   const Lang = [
     { id: 1, title: "HTML" },
@@ -77,39 +77,45 @@ export default function SkillsSection() {
     { id: 6, title: "Framer Motion" },
   ];
 
-  const SkillsCards = [
-    { id: 1, data: Lang, name: t("Fundamental") },
-    { id: 2, Other: Other, name: t("Programming") },
-    { id: 3, data: Tool, name: t("JavaScriptF") },
-    { id: 4, data: Framwork, name: t("State") },
-    { id: 5, data: CSSFrameworks, name: t("CSSFrameworks") },
-    { id: 6, data: CompLibraries, name: t("Component") },
-    { id: 7, data: BuildTools, name: t("Build") },
-    { id: 8, data: VersionControl, name: t("Version") },
-    { id: 9, data: APIIntegration, name: t("APIIntegration") },
-    { id: 10, data: responsive, name: t("Responsive") },
-    { id: 11, data: CodeQuality, name: t("CodeQuality") },
-    { id: 12, data: SoftSkills, name: t("Soft") },
-    { id: 13, data: Libraries, name: t("Libraries") },
-  ];
+  // const SkillsCards = [
+  //   { id: 1, data: Lang, name: "Fundamental") },
+  //   { id: 2, Other: Other, name: "Programming") },
+  //   { id: 3, data: Tool, name: "JavaScriptF") },
+  //   { id: 4, data: Framwork, name: "State") },
+  //   { id: 5, data: CSSFrameworks, name: "CSSFrameworks") },
+  //   { id: 6, data: CompLibraries, name: "Component") },
+  //   { id: 7, data: BuildTools, name: "Build") },
+  //   { id: 8, data: VersionControl, name: "Version") },
+  //   { id: 9, data: APIIntegration, name: "APIIntegration") },
+  //   { id: 10, data: responsive, name: "Responsive") },
+  //   { id: 11, data: CodeQuality, name: "CodeQuality") },
+  //   { id: 12, data: SoftSkills, name: "Soft") },
+  //   { id: 13, data: Libraries, name: "Libraries") },
+  // ];
   return (
-    <div id="skills" className="flex flex-col w-full gap-14">
-      <div className="flex flex-row justify-between! items-center gap-6 w-full">
-        <div className="flex flex-row items-center gap-5">
-          <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
-            <span className="text-primary ">#</span> {t("skills")}
-          </h1>
+    <Container
+      id="projectsection"
+      className=" w-full h-fit xl:h-screen gap-14 lg:mt-0!  "
+    >
+      <div id="skillsection" className="flex flex-col w-full ">
+        <SectionTitle title="Skills" />
+        <div className="flex flex-row justify-between! items-center gap-6 w-full">
+          <div className="flex flex-row items-center gap-5">
+            {/* <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
+            <span className="text-primary ">#</span> "skills"
+          </h1> */}
+          </div>
         </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {SkillsCards.map((card) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {/* {SkillsCards.map((card) => (
           <SkillsCard
             key={card.id}
             data={card.data || card.Other}
             name={card.name}
           />
-        ))}
+        ))} */}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }
