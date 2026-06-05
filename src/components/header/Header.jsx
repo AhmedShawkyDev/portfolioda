@@ -30,9 +30,9 @@ export default function Header() {
             {/* 2. تعديل لون اللوجو: أسود في العادي، وأبيض في الدارك */}
             <Link
               href="/"
-              className="font-bold text-xl text-black dark:text-white transition-colors duration-300"
+              className="font-bold text-xl text-black dark:text-white transition-colors duration-300 flex gap-2"
             >
-              "welcome"
+              Welcome
               <motion.div
                 animate={{ rotate: [0, 20, -15, 15, -10, 10, 0] }}
                 transition={{

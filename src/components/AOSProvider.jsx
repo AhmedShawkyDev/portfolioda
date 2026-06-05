@@ -7,8 +7,8 @@ import "aos/dist/aos.css";
 export default function AOSProvider({ children }) {
   useEffect(() => {
     AOS.init({
-      duration: 800, // مدة الحركة بالملي ثانية
-      once: false,   // اجعل الحركة تتكرر كل ما تعمل سكرول (أو true لمرة واحدة)
+      duration: 2000,
+      once: false,
     });
   }, []);
 

@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <Container className="lg:flex-row gap-5 justify-between w-full h-fit xl:h-screen  mt-10! lg:mt-[-10]!">
       <div className="flex flex-col gap-6 lg:w-2/3 w-full">
-        <MotionComp className="flex flex-col gap-6">
+        <div data-aos="fade-right" className="flex flex-col gap-6">
           <div className="text-2xl xl:text-4xl text-foreground  flex flex-wrap gap-4 font-semibold flex-col">
             <div className="flex gap-2">
               <span className="">My Name is</span>
@@ -42,9 +42,12 @@ export default function HeroSection() {
               Download Resume <FaCloudDownloadAlt />
             </a>
           </div>
-        </MotionComp>
+        </div>
       </div>
-      <MotionComp className="w-full lg:w-1/3 flex justify-center xl:justify-end">
+      <div
+        data-aos="fade-left"
+        className="w-full lg:w-1/3 flex justify-center xl:justify-end"
+      >
         <Link href={`/`} className="">
           <Image
             src={`https://res.cloudinary.com/dn2fdxtad/image/upload/v1765281936/hero_i9seac.webp`}
@@ -55,7 +58,7 @@ export default function HeroSection() {
             fetchPriority="high"
           />
         </Link>
-      </MotionComp>
+      </div>
     </Container>
   );
 }
