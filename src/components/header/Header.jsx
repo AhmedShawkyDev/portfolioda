@@ -20,7 +20,7 @@ export default function Header() {
   ];
 
   return (
-    <div>
+    <div data-aos="fade-down">
       <SideSocial />
 
       {/* 1. تعديل خلفية الهيدر: أبيض في العادي، ورمادي غامق في الدارك مود */}

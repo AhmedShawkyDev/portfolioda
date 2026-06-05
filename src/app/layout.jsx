@@ -3,6 +3,7 @@ import { Providers } from "@/components/Providers";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer";
 import "./globals.css";
+import AOSProvider from "@/components/AOSProvider";
 
 const fira = Fira_Code({
   subsets: ["latin"],
@@ -24,11 +25,16 @@ export default function RootLayout({ children }) {
       className={`${fira.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Providers defaultTheme="dark" value={{ light: "light", dark: "dark" }}>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <AOSProvider>
+          <Providers
+            defaultTheme="dark"
+            value={{ light: "light", dark: "dark" }}
+          >
+            <Header />
+            {children}
+            <Footer />
+          </Providers>
+        </AOSProvider>
       </body>
     </html>
   );
