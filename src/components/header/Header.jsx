@@ -13,10 +13,10 @@ export default function Header() {
   const handleCloseMenu = () => setOpenMenu(false);
 
   const navLinks = [
-    { id: 1, name: "home", path: `/` },
-    { id: 2, name: "projects", path: `#projectsection` },
-    { id: 3, name: "about-me", path: `#aboutsection` },
-    { id: 4, name: "contacts", path: `#contactsection` },
+    { id: 1, name: "Home", path: `/` },
+    { id: 2, name: "Projects", path: `#projectsection` },
+    { id: 3, name: "About Me", path: `#aboutsection` },
+    { id: 4, name: "Contacts", path: `#contactsection` },
   ];
 
   return (
