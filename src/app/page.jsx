@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <Container className="flex flex-col gap-20  ">
       <HeroSection />
-
       <ProjectSection />
-
       <AboutMeSection />
       <SkillsSection />
       <ContactsSection />

@@ -37,7 +37,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               download={true}
-              href="https://drive.google.com/file/d/1lO2aGujfsXZEux5kmkZpzh7Xc4hCD5Sj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1H4rWTUyw11YdJrdroVztb795hc0PRsif/view?usp=sharing"
             >
               Download Resume <FaCloudDownloadAlt />
             </a>

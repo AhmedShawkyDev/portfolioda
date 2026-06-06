@@ -35,11 +35,12 @@ export default function ProjectSection() {
 
   return (
     <Container
+      animation="fade-up"
       id="projectsection"
       className=" w-full h-fit xl:h-screen gap-14 lg:mt-0!  "
     >
       <div className="flex flex-col lg:flex-row justify-between! items-center gap-6 w-full ">
-        <SectionTitle title="projects" />
+        <SectionTitle title="Projects" />
         {/* <Link
           href={`${locale}/projects`}
           className="text-lg xl:flex items-center flex-nowrap w-1/4 hidden "
