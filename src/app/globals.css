@@ -36,3 +36,6 @@ body {
   font-family: var(--font-fira-code); /* الفونت اللي ربطناه في الـ layout */
 }
 
+html {
+  scroll-behavior: smooth;
+}

@@ -4,6 +4,8 @@ import ProjectSection from "@/components/project-section/project-section";
 import AboutMeSection from "@/components/about-section/about-me-section";
 import SkillsSection from "@/components/skills-section/skills-section";
 import ContactsSection from "@/components/contacts-section/contacts-section";
+import TopButton from "@/components/top-button";
+
 export default function Home() {
   return (
     <Container className="flex flex-col gap-20  ">
@@ -12,6 +14,7 @@ export default function Home() {
       <AboutMeSection />
       <SkillsSection />
       <ContactsSection />
+      <TopButton />
     </Container>
   );
 }
