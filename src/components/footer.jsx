@@ -10,14 +10,12 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between w-full gap-4">
           <div className=" flex flex-col  items-center lg:items-start">
             <p className="text-lg font-medium text-foreground">Ahmed Shawky</p>
-            <p className="text-lg font-medium text-foreground">
-              Software Developer
-            </p>
+            <p className="text-lg font-medium text-foreground">Data Analyst</p>
           </div>
 
           <div className="flex justify-center items-center">
             <p className="text-lg text-primary-text">
-              copy
+              Developed by
               <Link href={`/`} className="text-primary">
                 {" "}
                 me
@@ -25,7 +23,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col items-center gap-3">
-            <p className="text-lg font-medium text-foreground">"social"</p>
+            <p className="text-lg font-medium text-foreground">Social</p>
             <ul className=" flex">
               {social.map((icons) => {
                 return (
