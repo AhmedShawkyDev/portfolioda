@@ -9,9 +9,12 @@ export default function AboutMeSection() {
       id="aboutsection"
       className=" flex flex-col w-full h-fit xl:h-screen gap-14"
     >
-      <SectionTitle title="About Me" />
+      <SectionTitle title="About Me" motion="fade-down" />
       <div className="flex w-full justify-between items-center flex-col lg:flex-row gap-4">
-        <div className="flex flex-col gap-7 w-full xl:w-3/4">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col gap-7 w-full xl:w-3/4"
+        >
           <div className=" flex flex-col gap-4">
             <p className="text-xl text-foreground font-medium">
               Hello , I'm Ahmed Shawky
@@ -37,7 +40,10 @@ export default function AboutMeSection() {
           </div>
         </div>
 
-        <div className="w-full lg:w-2/3 flex justify-center xl:justify-end">
+        <div
+          data-aos="fade-left"
+          className="w-full lg:w-2/3 flex justify-center xl:justify-end"
+        >
           <Image
             src={`https://res.cloudinary.com/dn2fdxtad/image/upload/v1765294417/herooo_kjjt87.webp`}
             alt="Ahmed Shawky"

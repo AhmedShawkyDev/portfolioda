@@ -4,7 +4,7 @@ import { social } from "./header/side-social";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer data-aos="fade-up">
       <div className="w-full h-px bg-primary-text"></div>
       <Container className="  flex-col  gap-12 py-2 lg:py-8 lg:flex-row mt-10!">
         <div className="flex flex-col lg:flex-row justify-between w-full gap-4">
@@ -18,7 +18,7 @@ export default function Footer() {
               Developed by
               <Link href={`/`} className="text-primary">
                 {" "}
-                me
+                ME
               </Link>
             </p>
           </div>

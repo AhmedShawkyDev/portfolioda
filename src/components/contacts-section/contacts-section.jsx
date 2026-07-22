@@ -19,7 +19,7 @@ export default function ContactsSection() {
             strategy and data logic, let's get in touch!
           </p>
         </div>
-        <div className="border border-grey p-4 flex flex-col justify-end gap-4 w-full lg:w-fit">
+        <div className="border border-grey p-4 flex flex-col justify-end gap-4 w-full lg:w-1/4 h-fit">
           <p className="">Message me on --</p>
           <a
             href="https://wa.me/966561417008"

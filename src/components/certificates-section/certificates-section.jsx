@@ -4,10 +4,13 @@ export default function CertificatesSection() {
   return (
     <div
       id="certificatesection"
-      className=" flex flex-col w-full h-fit xl:h-screen gap-14"
+      className=" flex flex-col w-full   h-fit xl:h-50vh   gap-14"
     >
-      <SectionTitle title="Certificates" />
-      <div className="flex w-full justify-between items-center flex-col lg:flex-row gap-4">
+      <SectionTitle title="Certificates" motion="fade-down" />
+      <div
+        data-aos="fade-up"
+        className="flex w-full justify-between items-center flex-col lg:flex-row gap-4"
+      >
         <div className="flex flex-col gap-7 w-full ">
           <div className=" flex flex-col gap-4">
             <div className="flex flex-col gap-4">

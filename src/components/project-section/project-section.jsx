@@ -41,20 +41,9 @@ export default function ProjectSection() {
     >
       <div className="flex flex-col lg:flex-row justify-between! items-center gap-6 w-full ">
         <SectionTitle title="Projects" />
-        {/* <Link
-          href={`${locale}/projects`}
-          className="text-lg xl:flex items-center flex-nowrap w-1/4 hidden "
-        >
-          "view"
-          {locale === "en" ? (
-            <RiArrowRightDoubleLine />
-          ) : (
-            <RiArrowLeftDoubleLine />
-          )}
-        </Link> */}
       </div>
-      {/* <MotionComp>
-        <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
+
+      {/* <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
           {projects.map((project) => {
             return (
               <Card
@@ -67,8 +56,7 @@ export default function ProjectSection() {
               />
             );
           })}
-        </div>
-      </MotionComp> */}
+        </div> */}
     </Container>
   );
 }
