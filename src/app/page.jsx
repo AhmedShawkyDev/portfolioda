@@ -4,6 +4,7 @@ import ProjectSection from "@/components/project-section/project-section";
 import AboutMeSection from "@/components/about-section/about-me-section";
 import SkillsSection from "@/components/skills-section/skills-section";
 import ContactsSection from "@/components/contacts-section/contacts-section";
+import CertificatesSection from "@/components/certificates-section/certificates-section";
 import TopButton from "@/components/top-button";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ProjectSection />
       <AboutMeSection />
       <SkillsSection />
+      <CertificatesSection />
       <ContactsSection />
       <TopButton />
     </Container>

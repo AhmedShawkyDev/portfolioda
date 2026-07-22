@@ -15,11 +15,13 @@ export default function HeroSection() {
               <span className="">My Name is</span>
               <span className="text-primary"> Ahmed Shawky </span>
             </div>
-            and I am
-            <span className="text-primary"> Data Analyst </span>
+            <div className="flex gap-2">
+              <span className="">and I am</span>
+              <span className="text-primary"> Data Analyst </span>
+            </div>
           </div>
           <p className="text-xl text-primary-text font-medium lg:w-3/4 w-full">
-            Behind every complex dataset is a story waiting to be told. I
+            Behind every complex dataset is a story waiting to be told. <br />I
             transform messy data into clean, visual stories that uncover hidden
             opportunities because Data Analysis is bridging the gap between
             numbers and strategy through advanced analytics and dynamic
