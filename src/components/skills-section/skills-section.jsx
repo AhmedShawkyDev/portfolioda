@@ -93,29 +93,24 @@ export default function SkillsSection() {
   //   { id: 13, data: Libraries, name: "Libraries") },
   // ];
   return (
-    <Container
-      id="projectsection"
-      className=" w-full h-fit xl:h-screen gap-14 lg:mt-0!  "
-    >
-      <div id="skillsection" className="flex flex-col w-full ">
-        <SectionTitle title="Skills" />
-        <div className="flex flex-row justify-between! items-center gap-6 w-full">
-          <div className="flex flex-row items-center gap-5">
-            {/* <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
+    <div id="skillsection" className="flex flex-col w-full ">
+      <SectionTitle title="Skills" />
+      <div className="flex flex-row justify-between! items-center gap-6 w-full">
+        <div className="flex flex-row items-center gap-5">
+          {/* <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
             <span className="text-primary ">#</span> "skills"
           </h1> */}
-          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* {SkillsCards.map((card) => (
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* {SkillsCards.map((card) => (
           <SkillsCard
             key={card.id}
             data={card.data || card.Other}
             name={card.name}
           />
         ))} */}
-        </div>
       </div>
-    </Container>
+    </div>
   );
 }

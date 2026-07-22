@@ -3,7 +3,7 @@ import SectionTitle from "../section-title";
 export default function CertificatesSection() {
   return (
     <div
-      id="aboutsection"
+      id="certificatesection"
       className=" flex flex-col w-full h-fit xl:h-screen gap-14"
     >
       <SectionTitle title="Certificates" />

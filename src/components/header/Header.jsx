@@ -16,6 +16,8 @@ export default function Header() {
     { id: 1, name: "Home", path: `/` },
     { id: 2, name: "Projects", path: `#projectsection` },
     { id: 3, name: "About Me", path: `#aboutsection` },
+    { id: 3, name: "Skills", path: `#skillsection` },
+    { id: 3, name: "Certificates", path: `#certificatesection` },
     { id: 4, name: "Contacts", path: `#contactsection` },
   ];
 
