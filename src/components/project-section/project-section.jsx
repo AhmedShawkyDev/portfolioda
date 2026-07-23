@@ -1,37 +1,24 @@
-import Link from "next/link";
-import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri";
 import Container from "../container";
 import Card from "../card";
 import SectionTitle from "../section-title";
-import MotionComp from "@/components/motion-component";
 
+import hrdash from "@/assets/hr_dashboard.png";
 export default function ProjectSection() {
-  // const projects = [
-  //   {
-  //     id: 1,
-  //     title: t("projects_data.0.title"),
-  //     path: "https://rhcapital.ae/en",
-  //     image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/r_h_sefozp.webp`,
-  //     description: t("projects_data.0.description"),
-  //     tools: t("projects_data.0.tools"),
-  //   },
-  //   {
-  //     id: 2,
-  //     title: t("projects_data.1.title"),
-  //     path: "https://roia.ae/en",
-  //     image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/roia_ue4ix6.webp`,
-  //     description: t("projects_data.1.description"),
-  //     tools: t("projects_data.1.tools"),
-  //   },
-  //   {
-  //     id: 3,
-  //     title: t("projects_data.2.title"),
-  //     path: "https://agilova.com/",
-  //     image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/agilova_jcs8gv.webp`,
-  //     description: t("projects_data.2.description"),
-  //     tools: t("projects_data.2.tools"),
-  //   },
-  // ];
+  const projects = [
+    {
+      id: 1,
+      title: "HR Analytics",
+      // videoEmbedUrl:
+      //   "https://www.loom.com/embed/c64ee2e4444a4b56a189896adcc46b8e",
+      image: hrdash,
+      description:
+        "Transforming raw retail data into strategic insights and interactive dashboards to track Key Performance Indicators (KPIs) and drive data-driven decision-making",
+      tools: "Excel, power query",
+      github: "https://github.com/AhmedShawkyDev/HR-dashboradnew",
+      linkedin:
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7454591972608139264?collapsed=1",
+    },
+  ];
 
   return (
     <Container
@@ -43,20 +30,22 @@ export default function ProjectSection() {
         <SectionTitle title="Projects" />
       </div>
 
-      {/* <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
-          {projects.map((project) => {
-            return (
-              <Card
-                key={project.id}
-                title={project.title}
-                path={project.path}
-                image={project.image}
-                description={project.description}
-                tools={project.tools}
-              />
-            );
-          })}
-        </div> */}
+      <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
+        {projects.map((project) => {
+          return (
+            <Card
+              key={project.id}
+              title={project.title}
+              videoEmbedUrl={project.videoEmbedUrl}
+              image={project.image}
+              description={project.description}
+              tools={project.tools}
+              github={project.github}
+              linkedin={project.linkedin}
+            />
+          );
+        })}
+      </div>
     </Container>
   );
 }
