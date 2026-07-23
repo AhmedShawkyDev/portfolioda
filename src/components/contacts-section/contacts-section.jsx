@@ -12,7 +12,7 @@ export default function ContactsSection() {
       <SectionTitle title="Contacts" />
       <div className="flex flex-col lg:flex-row gap-4 justify-between lg:gap-7">
         <div>
-          <p className=" text-primary-text font-medium text-lg w-full lg:w-1/2">
+          <p className=" text-primary-text font-medium text-lg w-full lg:w-3/4">
             Ready to unlock the power of your data? I’m currently available for
             full-time roles and freelance opportunities. <br /> If you are
             looking for a Data Analyst who can bridge the gap between business

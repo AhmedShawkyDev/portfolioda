@@ -44,21 +44,13 @@ export default function Card({
         <p className="text-sm font-medium lg text-primary-text line-clamp-3 min-h-20">
           {description}
         </p>
-
         <Link
           href={github}
           target="_blank"
           className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
         >
-          <FaGithub className="text-lg" /> Code
+          <FaGithub className="text-lg" /> GitHub
         </Link>
-        {/* <iframe
-          src="https://www.linkedin.com/embed/feed/update/urn:li:share:7454591972608139264?collapsed=1"
-          className="w-full h-full"
-          frameborder="0"
-          allowfullscreen=""
-          title="Embedded post"
-        ></iframe> */}
         <Link
           href={linkedin}
           target="_blank"
