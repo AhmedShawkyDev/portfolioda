@@ -24,7 +24,7 @@ export default function MobileNavLinks({ data, hcloseMenu, hopenmenu }) {
           {data.map((item) => (
             <li
               key={item.id}
-              className="text-black dark:text-white text-xl font-semibold border-b border-gray-200 dark:border-gray-800 pb-2 w-full"
+              className="text-black dark:text-white text-xl font-semibold border-b border-gray-200 dark:border-gray-800 pb-2 w-full hover:text-[#7d3c98] dark:hover:text-primary transition-colors duration-300 "
               onClick={hcloseMenu}
             >
               <span className="text-[#7d3c98] dark:text-primary mr-2">#</span>
