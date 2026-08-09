@@ -4,6 +4,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer";
 import "./globals.css";
 import AOSProvider from "@/components/AOSProvider";
+import TopButton from "@/components/top-button";
 
 const fira = Fira_Code({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <Footer />
+            <TopButton />
           </Providers>
         </AOSProvider>
       </body>
