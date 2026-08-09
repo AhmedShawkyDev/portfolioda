@@ -7,7 +7,7 @@ export default function AboutMeSection() {
   return (
     <div
       id="aboutsection"
-      className=" flex flex-col w-full h-fit xl:h-screen gap-14"
+      className=" flex flex-col w-full h-fit xl:h-screen gap-14 overflow-x-hidden"
     >
       <SectionTitle title="About Me" motion="fade-down" />
       <div className="flex w-full justify-between items-center flex-col lg:flex-row gap-4">

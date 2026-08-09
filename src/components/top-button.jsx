@@ -17,8 +17,8 @@ export default function TopButton() {
       className="
         cursor-pointer
         fixed 
-        bottom-42.5 ltr:right-3.75 rtl:left-3.75 
-        md:bottom-8 md:ltr:right-8 md:rtl:left-8
+        
+        bottom-8 right-8
         flex items-center justify-center 
         w-12 h-12 
         border-2 border-primary 

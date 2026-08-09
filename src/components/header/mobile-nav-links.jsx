@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
+import { IoMdClose } from "react-icons/io";
 
 export default function MobileNavLinks({ data, hcloseMenu, hopenmenu }) {
   return (
@@ -8,20 +9,17 @@ export default function MobileNavLinks({ data, hcloseMenu, hopenmenu }) {
         hopenmenu ? "translate-x-0" : "-translate-x-full"
       }`}
     >
-      {/* الحاوية الداخلية اللي شايلة الخلفية والمحتوى */}
       <div className="relative flex flex-col justify-start items-start gap-8 p-6 bg-background-custom dark:bg-back w-full h-full shadow-2xl transition-colors duration-300">
-        {/* زرار الإغلاق (X) متظبط مكانه فوق على اليمين */}
         <button
           onClick={hcloseMenu}
           className="absolute top-4 right-6 p-2"
           aria-label="Close Menu"
         >
-          <span className="text-black dark:text-white text-2xl font-bold hover:text-primary transition-colors">
-            X
+          <span className="text-black dark:text-white text-2xl font-bold hover:text-primary transition-colors cursor-pointer">
+            <IoMdClose />
           </span>
         </button>
 
-        {/* مسافة من فوق عشان الكلام ميبقاش لازق في السقف */}
         <ul className="flex flex-col gap-6 mt-12 w-full">
           {data.map((item) => (
             <li

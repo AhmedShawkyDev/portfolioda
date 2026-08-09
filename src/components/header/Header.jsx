@@ -60,7 +60,7 @@ export default function Header() {
                 <ThemeToggle />
                 <button
                   onClick={openMenu ? handleCloseMenu : handleOpenMenu}
-                  className="font-bold text-3xl text-black dark:text-white transition-colors duration-300"
+                  className="font-bold text-3xl text-black dark:text-white transition-colors duration-300 cursor-pointer"
                 >
                   <BiMenuAltLeft />
                 </button>
